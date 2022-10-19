@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header {
+    position: relative;
+    background:orange;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo {
+    color: rgb(83, 83, 83);
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+header nav {
+    float: left;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    color: black;
+    line-height: 60px;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ffffff;
+    background-color: crimson;
+}
+footer {
+    padding:30px 0px ;
+    background-color:red ;
+    color:#fff ;
+    text-align: center;
+    bottom: 1px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 1px 0;
+    background-color: red;
+}
+.medsos ul li {
+    display: inline-block;
+    color:#fff;
+    margin-right: 10px;
+}
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 800px){
+    .content-slide{
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next{
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+}
